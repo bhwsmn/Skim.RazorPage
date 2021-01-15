@@ -1,0 +1,18 @@
+﻿@page "{slug?}"
+@model IndexModel
+
+<section class="shortener">
+    <div class="container">
+        <div class="shortener-content">
+            <form method="POST" id="signup-form" class="shortener-form">
+                <h2 class="form-title">A Simple Link Shortener</h2>
+                <div class="form-group">
+                    <input asp-for="FullLink" required="required" class="form-input" placeholder="Long Url"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" id="submit" class="form-submit" value="Shorten"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
